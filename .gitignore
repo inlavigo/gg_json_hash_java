@@ -1,0 +1,37 @@
+# Maven output
+target/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+out/
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+# VS Code
+.vscode/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+*~
+
+# Maven wrapper
+.mvn/wrapper/maven-wrapper.jar
+
+# Logs and backups
+*.log
+*.bak
+*.swp
+*.swo
+
+# Test and coverage reports
+surefire-reports/
+failsafe-reports/
+coverage/
+
+# Generated documentation
+site/

@@ -1,0 +1,32 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "JsonHash",
+      "request": "launch",
+      "mainClass": "com.gg.jsonhash.JsonHash",
+      "projectName": "hello-world"
+    },
+    {
+      "type": "java",
+      "name": "HashJson",
+      "request": "launch",
+      "mainClass": "com.gg.hash.HashJson",
+      "projectName": "hello-world"
+    },
+    {
+      "type": "java",
+      "name": "HelloWorld",
+      "request": "launch",
+      "mainClass": "com.example.HelloWorld",
+      "projectName": "hello-world"
+    },
+    {
+      "type": "java",
+      "name": "Debug JUnit Test",
+      "request": "launch",
+      "mainClass": "${file}",
+      "projectName": "gg-hash-java"
+    }
+  ]
+}

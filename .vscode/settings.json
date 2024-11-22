@@ -1,0 +1,10 @@
+{
+  "java.configuration.updateBuildConfiguration": "interactive",
+  "java.test.config": {
+    "name": "JUnit",
+    "type": "java",
+    "request": "launch"
+  },
+  "editor.formatOnSave": true,
+  "dartImport.fixOnSave": false
+}
