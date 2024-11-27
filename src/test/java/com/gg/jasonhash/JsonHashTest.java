@@ -25,7 +25,7 @@ public class JsonHashTest {
     assertEquals("value", hashedJson.get("key"));
     String expectedHash = calcHash("{\"key\":\"value\"}");
     assertEquals(expectedHash, hashedJson.get("_hash"));
-    assertEquals("5Dq88zdSRIOcAS+WM/lYYt", hashedJson.get("_hash"));
+    assertEquals("5Dq88zdSRIOcAS-WM_lYYt", hashedJson.get("_hash"));
   }
 
   @Test
@@ -71,7 +71,7 @@ public class JsonHashTest {
     assertEquals("value", hashedJson.get("key"));
     String expectedHash = calcHash("{\"key\":\"value\"}");
     assertEquals(expectedHash, hashedJson.get("_hash"));
-    assertEquals("5Dq88zdSRIOcAS+WM/lYYt", hashedJson.get("_hash"));
+    assertEquals("5Dq88zdSRIOcAS-WM_lYYt", hashedJson.get("_hash"));
   }
 
   @Test
@@ -101,7 +101,7 @@ public class JsonHashTest {
   public void testApplyToString() {
     String jsonString = "{\"key\":\"value\"}";
     String hashedJsonString = hashJson.applyToString(jsonString);
-    assertEquals(hashedJsonString, "{\"_hash\":\"5Dq88zdSRIOcAS+WM/lYYt\",\"key\":\"value\"}");
+    assertEquals(hashedJsonString, "{\"_hash\":\"5Dq88zdSRIOcAS-WM_lYYt\",\"key\":\"value\"}");
   }
 
   @Test

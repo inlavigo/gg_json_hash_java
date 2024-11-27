@@ -51,7 +51,7 @@ public class JsonHash {
     try {
       MessageDigest digest = MessageDigest.getInstance("SHA-256");
       byte[] hashBytes = digest.digest(input.getBytes(StandardCharsets.UTF_8));
-      return Base64.encodeBase64String(hashBytes).substring(0, hashLength);
+      return Base64.encodeBase64URLSafeString(hashBytes).substring(0, hashLength);
     } catch (NoSuchAlgorithmException e) {
       throw new RuntimeException("SHA-256 algorithm not available", e);
     }
